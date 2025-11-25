@@ -16,17 +16,17 @@ public class GestoreGioco {
 
     public synchronized void verifica(int num) {
         if(vincitore != null) {
-            
-            System.out.println("il gioco è già stato vinto da " + vincitore);
+            System.out.println("il gioco è già stato vinto da " + vincitore + " sara per la prossima volta");
             return;
         }
-        else if (num == numeroVincente) {
-            //verifica num
-            System.out.println("ho vinto bella freghiii gimo ai baracconiiii");
+        
+        if (num == numeroVincente) {
             vincitore = Thread.currentThread().getName();
-
-        }else
+            System.out.println("ho vinto bella freghiii gimo ai baracconiiii");
+        } else {
             System.out.println("ho persooooooo adesso schiavizzo i paguri");
+        }
+      
     }
 }
 

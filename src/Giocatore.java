@@ -14,7 +14,7 @@ public class Giocatore extends Thread {
     public Giocatore(String nome, GestoreGioco gestore) {
 
         this.nome = nome;
-        gg = new GestoreGioco(gestore);
+        gg = gestore;
     }
 
     public void comunica() {
