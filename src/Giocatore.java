@@ -6,6 +6,11 @@ public class Giocatore extends Thread {
     GestoreGioco gg;
     int id;
 
+@Override
+public String toString(){    
+    return nome;
+}
+
 
     public Giocatore(String nome){
         this.nome = nome;

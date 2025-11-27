@@ -21,7 +21,7 @@ public class GestoreGioco {
         }
         
         if (num == numeroVincente) {
-            vincitore = Thread.currentThread().getName();
+            vincitore = Thread.currentThread().toString();
             System.out.println("ho vinto bella freghiii gimo ai baracconiiii");
         } else {
             System.out.println("ho persooooooo adesso schiavizzo i paguri");
